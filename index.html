@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gửi Bé yêu 💗</title>
+<style>
+* { box-sizing: border-box; }
+:root {
+  --pink: #e875a0;
+  --dark: #a83d68;
+  --pale: #fff0f6;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #784359;
+  background: linear-gradient(135deg,#fff5f8,#fce0eb,#fff8f0);
+  min-height: 100vh;
+}
+header {
+  text-align: center;
+  padding: 65px 20px 45px;
+  background: radial-gradient(ellipse at top,#fff,#fbd9e7 75%,transparent);
+}
+h1 {
+  font-size: clamp(38px,8vw,65px);
+  color: var(--dark);
+  margin: 15px 0;
+}
+h2 { color: var(--dark); }
+p { line-height: 1.8; }
+.wrap { width: min(850px,92%); margin: auto; }
+.card {
+  background: #ffffffdc;
+  border: 1px solid #f6d2e0;
+  border-radius: 24px;
+  padding: 24px;
+  margin: 22px auto;
+  box-shadow: 0 10px 30px #a8466810;
+}
+.center { text-align: center; }
+button {
+  background: var(--pink);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 13px 22px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 6px;
+}
+button:hover { background: #d95e8a; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 12px;
+}
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #f9dce7;
+}
+figure { margin: 0; }
+figcaption { text-align: center; padding: 8px; }
+audio, video {
+  width: 100%;
+  border-radius: 14px;
+  margin-top: 10px;
+}
+.letter {
+  white-space: pre-line;
+  line-height: 2;
+  font-size: 17px;
+}
+#surprise {
+  display: none;
+  background: #fff0f6;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 20px;
+}
+#surprise.show { display: block; }
+.heart {
+  position: fixed;
+  bottom: -35px;
+  pointer-events: none;
+  z-index: 10;
+  animation: float 6s linear forwards;
+}
+@keyframes float {
+  to {
+    transform: translateY(-110vh) rotate(30deg);
+    opacity: 0;
+  }
+}
+footer {
+  text-align: center;
+  padding: 25px 15px 45px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <p>🌷 20 · 10 · 2026 🌷</p>
+  <h1>Gửi Bé yêu 💗</h1>
+  <p>Anh đã chuẩn bị một món quà nhỏ dành riêng cho em.</p>
+  <p>Hãy mở từng kỷ niệm nhé, cô gái của anh!</p>
+  <button onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">
+    Đọc thư của anh 💌
+  </button>
+</header>
+
+<main class="wrap">
+
+  <section class="card center" id="letter">
+    <h2>💌 Một chút lời thương</h2>
+    <p class="letter">Bé yêu à! 💗
+
+Cảm ơn em vì đã xuất hiện trong cuộc đời anh.
+Cảm ơn em vì những nụ cười, những lần quan tâm
+và những khoảnh khắc bình dị chúng mình chia sẻ.
+
+Anh không biết mình có phải người lãng mạn nhất không,
+nhưng anh luôn muốn dành cho em những điều chân thành nhất.
+
+Ngày 20/10, anh mong em luôn vui vẻ,
+được yêu thương và tự tin theo đuổi những điều em thích.
+
+Mong rằng chúng mình sẽ còn cùng nhau
+tạo thêm thật nhiều kỷ niệm đẹp.
+
+Chúc Bé yêu có một ngày 20/10 thật ngọt ngào.
+Anh thương em nhiều lắm! 💗
+
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 class="center">📸 Kỷ niệm của chúng mình</h2>
+    <p class="center">Những khoảnh khắc anh muốn giữ mãi.</p>
+    <div class="gallery">
+      <figure>
+        <img src="images/photo1.jpg" alt="Kỷ niệm 1">
+        <figcaption>Ngày mình gặp nhau 💕</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo2.jpg" alt="Kỷ niệm 2">
+        <figcaption>Một ngày thật vui 🌷</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo3.jpg" alt="Kỷ niệm 3">
+        <figcaption>Nụ cười anh yêu 🧸</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card center">
+    <h2>🎵 Bài hát anh dành cho em</h2>
+    <p>Hãy nhấn phát để nghe bài hát của chúng mình nhé.</p>
+    <audio controls preload="metadata">
+      <source src="music/our-song.mp3" type="audio/mpeg">
+      Trình duyệt không hỗ trợ phát nhạc.
+    </audio>
+    <p><small>♡ Our special song ♡</small></p>
+  </section>
+
+  <section class="card center">
+    <h2>🎬 Một thước phim của chúng mình</h2>
+    <video controls playsinline preload="metadata"
+           poster="images/photo1.jpg">
+      <source src="video/our-memory.mp4" type="video/mp4">
+      Trình duyệt không hỗ trợ phát video.
+    </video>
+  </section>
+
+  <section class="card center">
+    <h2>🎁 Bé yêu ơi, mở quà nhé!</h2>
+    <p>Anh còn giấu một điều nho nhỏ dành riêng cho em.</p>
+    <button id="giftButton" onclick="openGift()">
+      Chạm để mở quà bí mật 💝
+    </button>
+
+    <div id="surprise" aria-live="polite">
+      <h2>💗 Bất ngờ dành cho Bé yêu 💗</h2>
+      <p>
+        Món quà quý giá nhất với anh là những khoảnh khắc
+        được ở bên em.
+
+        Mong em luôn vui vẻ, hạnh phúc và được yêu thương.
+        Mong rằng chúng mình sẽ có thêm thật nhiều ngày
+        20/10 để cùng nhau mỉm cười.
+
+        Chúc mừng ngày Phụ nữ Việt Nam!
+      </p>
+      <h3>Anh thương Bé yêu rất nhiều! 🌷</h3>
+      <p>Gửi em một cái ôm thật chặt 💕</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Made with love, dành riêng cho Bé yêu ♡</p>
+  <p>Happy Vietnamese Women's Day 💗</p>
+</footer>
+
+<script>
+function openGift() {
+  document.getElementById("surprise").classList.add("show");
+  document.getElementById("giftButton").textContent =
+    "Bé yêu đã mở quà rồi nè 💗";
+  document.getElementById("surprise").scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
+function makeHeart() {
+  const heart = document.createElement("span");
+  heart.className = "heart";
+  heart.textContent = ["💗", "💕", "♡", "🌸"][
+    Math.floor(Math.random() * 4)
+  ];
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (16 + Math.random() * 18) + "px";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 6000);
+}
+
+setInterval(makeHeart, 900);
+</script>
+
+</body>
+</html>
